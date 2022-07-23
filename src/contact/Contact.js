@@ -35,14 +35,14 @@ const Contact = () => {
     <>
     <motion.div initial={{y:100,opacity:0}} whileInView={{y:0,opacity:1}}
         viewport={{ once: true }}
-        transition={{delay:0.3,duration:0.75,amount:0.5 }} className="flex pt-8 mt-12 md:flex-row bg-bg2 " id="contact">
+        transition={{delay:0.3,duration:0.75,amount:0.7 }} className="flex flex-col gap-5 pt-8 mt-12 md:flex-row bg-bg2 " id="contact">
       {/* left side copy and paste from work section */}
         <div className="flex flex-col px-5 text-left md:pl-32 basis-1/3 w-left awesome">
           {/* darkMode */}
           {/* <span style={{color: darkMode?'white': ''}}>Get in Touch</span> */}
           <span className=" titel2" >Let's get in </span>
           <span className=" titels">TOUCH</span>
-         <span className="description"> If you need me you are welcome to contact me and say a big hello at anytime via email.</span>
+         <span className="description"> If you need me you are welcome to contact me and say hello at anytime via email.</span>
         <button className="flex self-center hover:bg-white hover:text-[#0077FF] max-w-[20rem] items-center justify-center h-10 px-6 py-3 text-xs lg:text-base text-white w-25 bg-[#0077FF]  transition duration-500  rounded-3xl" onClick={()=>{window.open('mailto:mohamed.bouraoui@ensi-uma.tn')}}>mohamed.bouraoui@ensi-uma.tn</button>
         </div>
       {/* right side form */}
@@ -51,7 +51,7 @@ const Contact = () => {
           <input type="email" name="user_email" className="user textinput caret-[#60A5FA] " required  placeholder="Email"/>
           <input type="text" name="from_name" className="user textinput caret-[#60A5FA]" required placeholder="Object"/>
           <textarea  name="message" className="h-32 user textinput caret-[#60A5FA]" placeholder="Message"/>
-          <button type="submit" value="Send" className="btn">Send</button>
+          <button type="submit" value="Send" className="flex self-center hover:bg-white hover:text-[#0077FF] max-w-[20rem] items-center justify-center h-10 px-6 py-3 text-xs lg:text-base text-white w-25 bg-[#0077FF]  transition duration-500  rounded-3xl">Send</button>
           <span className="description " >{done && "Thanks for Contacting me ❤"}</span>
           
         </form>

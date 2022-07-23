@@ -55,7 +55,7 @@ const Intro = () => {
       {/* right image side */}
       <div className="relative flex items-center justify-center md:flex-1">
         
-        <img className="absolute h-full rounded-full -right-1 -top-14 w-fu md:h-96 md:ml-5" src={blob} alt="" />
+        <img className="absolute w-[60%] h-full rounded-full right-5 -top-14 md:h-96 md:ml-5" src={blob} alt="" />
         <img className="z-10 border-2 border-blue-400 rounded-full h-72 lg:h-92 md:ml-5" src={boubou122} alt="" />
         
         {/* <div className="h-full rounded-full z-1 bg-gradient-to-r from-white via-green-400 to-blue-500 blur-2xl -z-10" ></div> */}

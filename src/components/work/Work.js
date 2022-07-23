@@ -22,12 +22,12 @@ const Works = () => {
       {/* left side */}
         <div className="flex flex-col items-center flex-1 gap-2 md:mb-10 md:relative lg:text-left ">
           <span className="titels lg:text-7xl" >
-            Work for All these
+          Experienced with these
           </span>
           <span className="titel2">Tools & Technologies </span>
-          <span className="description" >
+          {/* <span className="description" >
           I'm working on a lot of types of projects and as you can see there are some of the services that I can offer in my freelance projects if you want to ask about any other service just contact me
-          </span>
+          </span> */}
           {/* <Link to="contact" smooth={true} spy={true}> */}
             {/* <button className="btn">Hire Me</button> */}
           {/* </Link> */}

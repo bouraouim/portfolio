@@ -37,9 +37,7 @@ const Services = () => {
         <span className="pb-5 titels ">My services</span>
         <span className="mb-5 text-xl font-bold lg:text-left text-customgray ">
         I'm working on a lot of types of projects and as you can see there are some of the services that I can offer in my freelance projects if you want to ask about any other service just contact me</span>
-        <a  download>
-          <button className="btn">Download CV</button>
-        </a>
+        
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}
