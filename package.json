@@ -1,4 +1,5 @@
 {
+  "homepage": "http://bouraouim.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "blob-animated": "^1.2.9",
     "emailjs": "^4.0.0",
     "framer-motion": "^6.5.1",
     "postcss-cli": "^10.0.0",
@@ -19,8 +21,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "buildtail": "postcss ./src/index.css -o ./src/style.css",
@@ -46,6 +50,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6",
     "tailwindcss-debug-screens": "^2.2.1"

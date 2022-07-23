@@ -14,17 +14,17 @@ const navbar = () => {
         <div className="n-list">
           <ul style={{ listStyleType: "none" }} className="flex gap-8 mr-16 ">
             <li>
-              <Link to="services" spy={true} className="cursor-pointer hover:text-[#60A5FA]" smooth={true}>
+              <Link to="services" spy={true} className="cursor-pointer transition duration-500 hover:text-[#60A5FA]" smooth={true}>
                 Serivces
               </Link>
             </li>
             <li>
-              <Link to="portfolio" spy={true} className="cursor-pointer hover:text-[#60A5FA]" smooth={true}>
+              <Link to="portfolio" spy={true} className="cursor-pointer transition duration-500 hover:text-[#60A5FA]" smooth={true}>
                 Projects
               </Link>
             </li>
             <li>
-              <Link to="contact" spy={true} className="cursor-pointer hover:text-[#60A5FA] " smooth={true}>
+              <Link to="contact" spy={true} className="cursor-pointer transition duration-500 hover:text-[#60A5FA] " smooth={true}>
                 Contact
               </Link>
             </li>

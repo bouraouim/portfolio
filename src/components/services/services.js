@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
 // import "./Services.css";
 import Card from "../card/Card";
-import Glasses from "../../img/glasses.png";
-import HeartEmoji from "../../img/heartemoji.png";
+// import Glasses from "../../img/glasses.png";
+// import HeartEmoji from "../../img/heartemoji.png";
 import Monitor from "../../img/monitor.png";
 import ecomerce from "../../img/ecomerce.png";
 import landing from "../../img/landing.png";
-import Humble from "../../img/humble.png";
-import wave from '../../img/wave-haikei.svg'
+// import Humble from "../../img/humble.png";
+// import wave from '../../img/wave-haikei.svg'
 
 // import { themeContext } from "../../Context";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 // import Resume from './resume.pdf';
 
 const Services = () => {
@@ -26,7 +26,9 @@ const Services = () => {
 
   return (
     <div className="relative">
-    <div className="flex  flex-col h-[80rem] xl:flex-row gap-3 w-full xl:h-[30rem] px-12  mb-8 bg-bg2 lg md:mt-20 mt-36" id="services" style={{  }}>
+    <motion.div  initial={{y:100,opacity:0}} whileInView={{y:0,opacity:1}}
+        viewport={{ once: true }}
+        transition={{delay:0.25,duration:1,amount:0.5 }} className="flex  flex-col h-[80rem] xl:flex-row gap-3 w-full xl:h-[30rem] px-12  mb-8 bg-bg2 lg md:mt-20 mt-36" id="services" style={{  }}>
       
       {/* left side */}
       <div className="relative flex flex-col items-center flex-1 gap-5 awesome">
@@ -92,7 +94,7 @@ const Services = () => {
           style={{ background: "var(--purple)" }}
         ></div> */}
       </div>
-    </div>
+    </motion.div>
     </div>
   );
 };
