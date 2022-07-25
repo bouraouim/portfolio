@@ -18,13 +18,13 @@ const Works = () => {
   return (
     <motion.div initial={{y:100,opacity:0}} whileInView={{y:0,opacity:1}}
     viewport={{ once: true }}
-    transition={{delay:0.3,duration:0.75,amount:0.5 }} className="relative items-center  flex flex-col gap-5 h-[55rem] lg:flex-row lg:h-[30rem] md:h-[40rem] pb-5 mt-28 px-10" id="works">
+    transition={{delay:0.3,duration:0.75,amount:0.5 }} className="relative items-center  flex flex-col gap-5 h-[38rem] lg:flex-row  md:h-[30rem] pb-5 mt-36 px-10" id="works">
       {/* left side */}
-        <div className="flex flex-col items-center flex-1 gap-2 md:mb-10 md:relative lg:text-left ">
+        <div className="flex flex-col items-center flex-1 gap-2 lg:items-start md:mb-10 md:relative ">
           <span className="titels lg:text-7xl" >
           Experienced with these
           </span>
-          <span className="titel2">Tools & Technologies </span>
+          <h2 className="titel2">Tools & Technologies </h2>
           {/* <span className="description" >
           I'm working on a lot of types of projects and as you can see there are some of the services that I can offer in my freelance projects if you want to ask about any other service just contact me
           </span> */}

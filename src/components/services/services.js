@@ -28,18 +28,14 @@ const Services = () => {
     <div className="relative">
     <motion.div  initial={{y:100,opacity:0}} whileInView={{y:0,opacity:1}}
         viewport={{ once: true }}
-        transition={{delay:0.25,duration:1,amount:0.5 }} className="flex  flex-col h-[80rem] xl:flex-row gap-3 w-full xl:h-[30rem] px-12  mb-8 bg-bg2 lg md:mt-20 mt-36" id="services" style={{  }}>
+        transition={{delay:0.25,duration:1,amount:0.5 }} className="flex  flex-col h-[70rem] xl:flex-row gap-3 w-full xl:h-[30rem] px-12  mb-8 bg-bg2 lg md:mt-20 mt-40" id="services" >
       
       {/* left side */}
-      <div className="relative flex flex-col items-center flex-1 gap-5 awesome">
-        {/* dark mode */}
-        {/* <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span> */}
+      <div className="relative flex flex-col items-center flex-1 gap-5 ">
         <span className="pb-5 titels ">My services</span>
         <span className="mb-5 text-xl font-bold lg:text-left text-customgray ">
         I'm working on a lot of types of projects and as you can see there are some of the services that I can offer in my freelance projects if you want to ask about any other service just contact me</span>
-        
-        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
-      </div>
+              </div>
       {/* right */}
       <div className="flex flex-col flex-wrap items-center flex-1 gap-5 md:relative">
         {/* first card */}

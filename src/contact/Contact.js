@@ -37,7 +37,7 @@ const Contact = () => {
         viewport={{ once: true }}
         transition={{delay:0.3,duration:0.75,amount:0.7 }} className="flex flex-col gap-5 pt-8 mt-12 md:flex-row bg-bg2 " id="contact">
       {/* left side copy and paste from work section */}
-        <div className="flex flex-col px-5 text-left md:pl-32 basis-1/3 w-left awesome">
+        <div className="flex flex-col items-center px-5 md:items-start md:pl-32 basis-1/3 ">
           {/* darkMode */}
           {/* <span style={{color: darkMode?'white': ''}}>Get in Touch</span> */}
           <span className=" titel2" >Let's get in </span>

@@ -29,23 +29,22 @@ const Intro = () => {
   const transition = { duration: 2, type: "spring" };
 
   return (
-    <motion.div className="flex flex-col items-center gap-3 px-12 mt-24 h-[40rem] md:flex-row md:h-8/12 "  initial={{y:70,opacity:0}} whileInView={{y:0,opacity:1}}
+    <motion.div className="flex flex-col xl:px-24 items-center gap-3 px-12 mb-8 mt-24 h-[35rem] md:flex-row md:h-8/12 "  initial={{y:70,opacity:0}} whileInView={{y:0,opacity:1}}
     viewport={{ once: true }}
     transition={{delay:0.25,duration:0.75}} id="Intro">
       {/* left name side */}
-      <div className="relative flex flex-col items-center gap-1 pl-3 md:flex-1">
-        <div className="flex flex-col gap-1 text-left md:justify-start">
-          {/* yahan change hy darkmode ka */}
-          <span  className=" titel2">HII 👋! I Am Mohamed Bouraoui </span>
+      <div className="relative flex flex-col items-center gap-1 pl-3 lg:items-start md:flex-1">
+        <div className="flex flex-col items-start gap-1 md:items-start">
+          <h2  className=" titel2">HII 👋! I Am Mohamed Bouraoui </h2>
           <span className=" titels">Full-Stack Developer </span>
           <span className="description">
            <span className="underline decoration-wavy decoration-[#60A5FA]"> </span> with high level of experience in web designing
             and development, producting the Quality work
           </span>
         </div>
-        <div className="z-10 flex items-center justify-start gap-2">
+        <div className="z-10 flex gap-2">
         <Link to="portfolio" smooth={true} spy={true}>
-          <button className="flex  hover:bg-white text-xs hover:text-[#0077FF]  items-center justify-center h-10 lg:px-2 md:px-3 py-3 lg:text-base text-white  bg-[#0077FF]  transition duration-500  rounded-3xl">Check my work <UilAngleDoubleDown size="20" className="ml-1"/>   </button>
+          <button className="flex  hover:bg-white text-xs hover:text-[#0077FF]  items-center justify-center h-10 lg:px-2 px-3 py-3 lg:text-base text-white  bg-[#0077FF]  transition duration-500  rounded-3xl">Check my work <UilAngleDoubleDown size="20" className="ml-1"/>   </button>
         </Link>
         <a href={resume} download to="contact" smooth={true} spy={true}>
           <button className="flex hover:bg-white hover:text-[#0077FF]  items-center justify-center h-10 px-6 py-3 text-xs lg:text-base text-white w-25 bg-[#0077FF]  transition duration-500  rounded-3xl">Check my resume <UilFile size="15" className="ml-1"/></button>
